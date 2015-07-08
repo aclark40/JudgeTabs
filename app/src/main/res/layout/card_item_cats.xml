@@ -1,0 +1,82 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/lightBlue"
+            android:text="*Category"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/teamTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teams:"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/rubricTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rubric Questions:"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/teamTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/timeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_alignBaseline="@id/teamTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Number of Teams"
+            android:id="@+id/teamsNumber"
+            android:layout_alignTop="@+id/teamTitle"
+            android:layout_toEndOf="@+id/teamTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Number of Questions"
+            android:id="@+id/rubricNumber"
+            android:layout_alignTop="@+id/rubricTitle"
+            android:layout_toEndOf="@+id/rubricTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Time Left"
+            android:id="@+id/timeLeft"
+            android:layout_alignTop="@+id/rubricNumber"
+            android:layout_alignStart="@+id/timeTitle" />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>

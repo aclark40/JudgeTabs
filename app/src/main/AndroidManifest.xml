@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andrew.judgetabs" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".CatsFragment"
+            android:label="@string/title_activity_cats_fragment" >
+        </activity>
+        <activity
+            android:name=".Map"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name=".TeamsFragment"
+            android:label="@string/title_activity_teams" >
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name=".LoginActivity">
+        </activity>
+        <activity
+            android:name=".SelectionActivity">
+        </activity>
+    </application>
+
+</manifest>
